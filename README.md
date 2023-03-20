@@ -3,6 +3,7 @@
 ###   <h3 align="left">Тестирование API Restful-Booker (POST, GET, PUT, DELETE) в формате JSON. 
 Документация API: <a href="http://restful-booker.herokuapp.com/apidoc/index.html#api-Auth">Restful Booker</a></h3>
 ###   <h3 align="left">:heavy_check_mark: Создание токена POST https://restful-booker.herokuapp.com/auth</h3> 
+
  
   ![Image alt](https://github.com/Aleks-vl/Postman-collections/blob/main/POST%20CreateToken.png)
   
