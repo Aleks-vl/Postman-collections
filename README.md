@@ -17,7 +17,7 @@
   
 ###   <h3 align="left">:heavy_check_mark: Обновить информацию о бронировании PUT https://restful-booker.herokuapp.com/booking/:id</h3> 
  
-  ![Image alt]()
+  ![Image alt](https://github.com/Aleks-vl/Postman-collections/blob/main/PUT%20UpdateBooking.png)
   
 ###   <h3 align="left">:heavy_check_mark: Удалить бронирование DELETE https://restful-booker.herokuapp.com/booking/:id</h3> 
  
