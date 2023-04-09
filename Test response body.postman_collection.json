@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "c7ca79fe-4dd0-43e0-9fe5-14c86d7ba1db",
+		"name": "Test response body",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24059929"
+	},
+	"item": [
+		{
+			"name": "\nhttps://reqres.in/api/users?page=2 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"  pm.test(\"Test response body\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data[0].id).to.be.a('number');\r",
+							"    pm.expect(jsonData.data[0].email).to.be.a('string');\r",
+							"    pm.expect(jsonData.data[0].first_name).to.be.a('string');\r",
+							"    pm.expect(jsonData.data[0].last_name).to.be.a('string');\r",
+							"    pm.expect(jsonData.data[0].avatar).to.be.a('string');\r",
+							"  });\r",
+							"pm.test(\"Test response body (values)\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data[0].id).to.eql(7);\r",
+							"    pm.expect(jsonData.data[0].email).to.eql('michael.lawson@reqres.in');\r",
+							"    pm.expect(jsonData.data[0].first_name).to.eql(\"Michael\");\r",
+							"    pm.expect(jsonData.data[0].last_name).to.eql(\"Lawson\");\r",
+							"    pm.expect(jsonData.data[0].avatar).to.eql(\"https://reqres.in/img/faces/7-image.jpg\");\r",
+							"  });\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://reqres.in/api/unknown",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"      var jsonData = pm.response.json();\r",
+							"      console.log(Object.keys(jsonData));\r",
+							"      id = jsonData.data[1].id;\r",
+							"\r",
+							"  pm.test(\"Test response body\", function () {\r",
+							"  pm.expect(id).to.eql(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/unknown",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

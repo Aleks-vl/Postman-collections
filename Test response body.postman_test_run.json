@@ -1,0 +1,102 @@
+{
+	"id": "c5a38723-ae53-4c2e-a81f-4db3e11adf5c",
+	"name": "Test response body",
+	"timestamp": "2023-04-09T19:36:10.452Z",
+	"collection_id": "24059929-c7ca79fe-4dd0-43e0-9fe5-14c86d7ba1db",
+	"folder_id": 0,
+	"environment_id": "24059929-15996dec-5341-481d-9626-224fe502979b",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-09T19:36:09.771Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d00e4379-e60e-48f8-90a4-6c942d4b71f5",
+			"name": "\nhttps://reqres.in/api/users?page=2 Copy",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 149,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test response body": true,
+				"Test response body (values)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test response body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test response body (values)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test response body": true,
+					"Test response body (values)": true
+				}
+			]
+		},
+		{
+			"id": "da2e6b93-9155-432a-bb8e-05534a82e18d",
+			"name": "https://reqres.in/api/unknown",
+			"url": "https://reqres.in/api/unknown",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Test response body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Test response body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 188,
+	"collection": {
+		"requests": [
+			{
+				"id": "d00e4379-e60e-48f8-90a4-6c942d4b71f5",
+				"method": "GET"
+			},
+			{
+				"id": "da2e6b93-9155-432a-bb8e-05534a82e18d",
+				"method": "GET"
+			}
+		]
+	}
+}
