@@ -27,7 +27,12 @@
  ###   <h4 align="left">:heavy_check_mark: Тестирование response body. </h4> 
  ###   <h4 align="left"> Коллекция :arrow_right: https://github.com/Aleks-vl/Postman-collections/blob/main/Test%20response%20body.postman_collection.json </h4> 
  ###   <h4 align="left"> Run collection :arrow_right: https://github.com/Aleks-vl/Postman-collections/blob/main/Test%20response%20body.postman_test_run.json </h4> 
-  ```js
+ 
+ ![Тестирование response body](https://user-images.githubusercontent.com/122369252/230971522-06551cb5-0d73-4266-991c-20f34bd839e4.png)
+
+![Тестирование response body  Test Results](https://user-images.githubusercontent.com/122369252/230971892-f1027bd3-85e0-4a59-b6b1-9cdd047d11f3.png)
+ 
+ ```js
 
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
